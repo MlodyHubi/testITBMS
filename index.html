@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logoarlamow.jpg">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js"></script>
+    <title>BINGO!</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul id="menuList">
+                </ul>
+            </nav>
+            <img src="images/menu.png" alt="menu" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="adamcy">
+            <img src="images/pietruszka1.jpg" alt="logoarlamow" class="logoarlamow">
+            <h2>Bingo IT/BMS</h2>
+        </div>
+            <div class="col-2">
+                <div class="item items-1" id="divItem" onclick="main(this)"></div>
+                <div class="item items-2" id="divItem"onclick="main(this)"></div>
+                <div class="item items-3" id="divItem"onclick="main(this)"></div>
+                <div class="item items-4" id="divItem"onclick="main(this)"></div>
+                <div class="item items-5" id="divItem"onclick="main(this)"></div>
+                <div class="item items-6" id="divItem"onclick="main(this)"></div>
+                <div class="item items-7" id="divItem"onclick="main(this)"></div>
+                <div class="item items-8" id="divItem"onclick="main(this)"></div>
+                <div class="item items-9" id="divItem"onclick="main(this)"></div>
+                <div class="item items-10" id="divItem"onclick="main(this)"></div>
+                <div class="item items-11" id="divItem"onclick="main(this)"></div>
+                <div class="item items-12" id="divItem"onclick="main(this)"></div>
+                <div class="item items-13" id="divItem"onclick="main(this)"></div>
+                <div class="item items-14" id="divItem"onclick="main(this)"></div>
+                <div class="item items-15" id="divItem"onclick="main(this)"></div>
+                <div class="item items-16" id="divItem"onclick="main(this)"></div>
+            </div>
+            <div class="col-3">
+                <h2>Zostało ci:</h2>
+                <div id="timerDisplay">7h 59m 59s</div>
+                <h3>Na skompletowanie binga!</h3>
+            </div>
+        </div>
+        <div class="losowanie">
+            Wylosuj nowe bingo!
+        </div>
+        <button id="resetButton" type="button" class="buttonrefresh"><img src="images/refresh.png" alt="refresh" class="refresh"></button>
+        <p id="result"></p>
+    </div>
+    <button onclick="darkMode()"><img src="images/moon.png" alt="księżyc" class="darkmode"></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    color: greenyellow;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+.adamcy{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    margin-bottom: 0px;
+}
+
+.item{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 7px rgb(131, 147, 236);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+.item:hover{
+    background-color: rgba(0, 128, 0, 0.226);
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.col-1{
+    cursor: default;
+    width: 400px;
+    text-align: center;
+}
+.col-1 h3{
+    font-weight: 500;
+    font-size: 95%;
+}
+
+.col-2{
+    justify-content: center;
+    margin-top: 20px;
+    display: grid;
+    height: 80%;
+    grid-template-columns: 140px 140px 140px 140px;
+    grid-template-rows: 140px 140px 140px 140px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.col-3{
+    cursor: default;
+    width: 400px;
+    text-align: center;
+}
+.col-3 h3{
+    font-weight: 500;
+}
+
+.timerDisplay{
+    color: aqua;
+}
+
+.losowanie{
+    font-weight: 600;
+    cursor: default;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.refresh{
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 35px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s;
+    border: 0;
+}
+.buttonrefresh{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    outline: none;
+}
+.refresh:hover{
+    animation: rotation 2s infinite linear;
+    transition: all 0.3s;
+    width: 40px;
+}
+@keyframes rotation{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+#result{
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    height: 80px;
+    width: 200px;
+    text-align: center;
+    border-radius: 50px;
+    top: 30%;
+    right: 16%;
+    position: absolute;
+    font-size: 200%;
+}
+
+.dark-mode{
+    background-color: #373836;
+    color: white;
+}
+.darkmode{
+    cursor: pointer;
+    left: 48.8%;
+    width: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 2%;
+    outline: none;
+    border: 0;
+    transition: all 0.3s;
+}
+.darkmode:hover{
+    animation: rotation2 1s infinite linear;
+    transition: all 0.3s;
+    width: 45px;
+}
+
+@keyframes rotation2{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@media only screen and (max-width:700px){
+    nav ul{
+        margin-top: 10px;
+        width: 100%;
+        background: linear-gradient(#0a0a0a, #373836);
+        position: absolute;
+        right: 0;
+        z-index: -2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .col-1{
+        display: none;
+    }
+    .col-3{
+        display: none;
+    }
+    .col-2{
+        font-size: 75%;
+        grid-template-columns: 90px 90px 90px 90px;
+        grid-template-rows: 90px 90px 90px 90px;
+    }
+    #result{
+        position: absolute;
+        margin-top: 170px;
+        top: 80%;
+        left: 23.5%;
+    }
+    .darkmode{
+        position: absolute;
+        left: 45.1%;
+    }
+
+}
