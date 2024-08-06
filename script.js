@@ -79,6 +79,12 @@ var przykladoweTeksty = [
 'Bar basen nie wyświetlają się reklamy. Nie włączyli ich z kanału/pendrive',
 'Nie działa poczta. Wyłączony internet',
 'Zanik prądu',
+'Usterka klimatyzacji i wrażenie do rewizji jak goście są w pokoju', 
+'Zepsuta brama na garażu', 
+'Niania elektroniczna',
+'Wymiana sejfu',
+'Usterka której nikt nie jest w stanie naprawić w piątek o 21',
+'Ciągnięcie światłowodu',
 
 
 
